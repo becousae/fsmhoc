@@ -1,6 +1,6 @@
 {
   "name": "fsm-hoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Higher Order Component to introduce Finite State Machine to React Components",
   "main": "build/index.js",
   "scripts": {
