@@ -9,6 +9,11 @@ npm install fsm-hoc --save
 ## Usage
 
 This module provides a function to wrap your components in a finite state machine.
+This gives your component to additional props: `status` and `transition`.
+
+The status is the current status of the component.
+Transition is a function that takes as first argument `this`, and as second an object with 
+`type` key that contains the `Action`.
 
 ### Type arguments
 
@@ -102,10 +107,20 @@ class Form extends React.Component<Props & InjectedProps<Status, Action>, State>
 
   ...
 
+  onSubmit() {
+    this.props.transition(this, { type: Action.Submit }); 
+  }
+
   render() {
     return (
       ...
-      <input type="button" disabled={this.props.status !== Status.Loading}>Submit</input>
+      <input 
+        type="button" 
+        disabled={this.props.status !== Status.Loading}
+        onClick={this.onSubmit}
+      >
+        Submit
+      </input>
       ...
     );
   }
