@@ -1,1 +1,3 @@
 lib/
+tsconfig.json
+webpack.config.js
