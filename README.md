@@ -1,6 +1,9 @@
 # fsm-hoc
 Higher Order Component to introduce Finite State Machine to React Components
 
+The logic is based on [this article](https://css-tricks.com/robust-react-user-interfaces-with-finite-state-machines/).
+If you want to fully understand what's happening in this package and why you should use it, definitely read it!
+
 ## Installation 
 ```sh
 npm install fsm-hoc --save
