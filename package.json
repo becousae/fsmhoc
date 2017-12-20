@@ -1,8 +1,8 @@
 {
   "name": "fsm-hoc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Higher Order Component to introduce Finite State Machine to React Components",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
