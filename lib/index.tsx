@@ -9,7 +9,7 @@ export interface InjectedProps<S, A> {
   status: S;
 }
 
-export default function fsm<Props, State, Status, ActionType>(
+export function fsm<Props, State, Status, ActionType>(
   // tslint:disable-next-line: no-any
   statusMachine: any,
   // tslint:disable-next-line: no-any
