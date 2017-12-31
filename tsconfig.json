@@ -11,7 +11,8 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "sourceMap": false,
-    "outDir": "./dist",
+    "outDir": "dist",
+    "declarationDir": ".",
     "declaration": true
   }
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface Action<T> {
+export interface Action<T> {
   type: T;
 }
 
@@ -16,16 +16,12 @@ export function fsm<Props, State, Status, ActionType>(
   commands: any,
   initialStatus: Status
 ) {
-  interface WrapperState {
-    status: Status;
-  }
-
   type CAction = Action<ActionType>;
   type CProps = InjectedProps<Status, CAction>;
 
   // tslint:disable-next-line: no-any
   return (Component: React.ComponentClass<any>) => {
-    return class extends React.Component<Props, WrapperState> {
+    return class extends React.Component<Props, { status: Status }> {
       static displayName = 'FSM';
 
       constructor(props: Props) {

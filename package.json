@@ -1,13 +1,13 @@
 {
   "name": "fsm-hoc",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Higher Order Component to introduce Finite State Machine to React Components",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "types" : "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/becousae/fsm-hoc.git"
@@ -24,11 +24,13 @@
   },
   "homepage": "https://github.com/becousae/fsm-hoc#readme",
   "devDependencies": {
-    "@types/react": "^16.0.30",
-    "awesome-typescript-loader": "^3.4.1",
-    "react": "^16.2.0",
+    "@types/react": "^16.0.31",
     "source-map-loader": "^0.2.3",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "ts-loader": "^3.2.0"
   }
 }
