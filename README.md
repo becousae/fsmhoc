@@ -73,7 +73,7 @@ The status to start in.
 
 ### Complete example
 ```typescript
-import fsm, { InjectedProps } from 'fsm-hoc';
+import { fsm, InjectedProps } from 'fsm-hoc';
 
 enum Status {
   Idle,
